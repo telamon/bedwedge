@@ -140,7 +140,7 @@ module BasePlate(bH = 7,lpad = 3,screwPad=0.7,midsect=true){
 
 //-------------- Export
 translate(){
-  translate([0,-8,5]) rotate([90]) translate([0,-TH-0.8,0]) IndicatorArm();
+  translate([0,-8,4.8]) rotate([90,0,180-A]) translate([0,-TH-0.8,0]) IndicatorArm();
   translate([0,12,4]) rotate([-90]) BasePlate();
   translate([0,0,10])rotate([90]) translate([0,-TH-6,0]) BasePlate(midsect=false);
 }
